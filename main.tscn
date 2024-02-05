@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=3 uid="uid://dmnvgxvg2qmrr"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_i0dlm"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_i0dlm")
+
+[node name="main" type="Button" parent="."]
+offset_left = 463.0
+offset_top = 134.0
+offset_right = 649.0
+offset_bottom = 276.0
+text = "Main"
+
+[node name="keluar" type="Button" parent="."]
+offset_left = 465.0
+offset_top = 385.0
+offset_right = 651.0
+offset_bottom = 527.0
+tooltip_text = "ini aka keluar dari game"
+text = "Keluar"
+
+[connection signal="pressed" from="main" to="." method="_on_main_pressed"]
+[connection signal="pressed" from="keluar" to="." method="_on_keluar_pressed"]
